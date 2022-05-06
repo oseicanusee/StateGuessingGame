@@ -97,6 +97,8 @@ public class StateCapitals {
                  System.out.println("WRONG! " + answer + " IS INCORRECT!");
                  numberCorrect--;
              }
+         // removes the state recently asked so that the same question does not repeat. 
+          stateMap.remove(currentState);
             curr++;
         }
         
